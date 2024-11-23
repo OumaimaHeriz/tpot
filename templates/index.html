@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Detection System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Detection</h1>
+        <form method="POST" action="/predict">
+            <!-- Mean Values -->
+            
+            <input type="text" name="radius_mean" placeholder="Mean Radius" required>
+            <input type="text" name="texture_mean" placeholder="Mean Texture" required>
+            <input type="text" name="perimeter_mean" placeholder="Mean Perimeter" required>
+            <input type="text" name="area_mean" placeholder="Mean Area" required>
+            <input type="text" name="smoothness_mean" placeholder="Mean Smoothness" required>
+            <input type="text" name="compactness_mean" placeholder="Mean Compactness" required>
+            <input type="text" name="concavity_mean" placeholder="Mean Concavity" required>
+            <input type="text" name="concave_points_mean" placeholder="Mean Concave Points" required>
+            <input type="text" name="symmetry_mean" placeholder="Mean Symmetry" required>
+            <input type="text" name="fractal_dimension_mean" placeholder="Mean Fractal Dimension" required>
+
+            <!-- SE (Standard Error) Values -->
+            
+            <input type="text" name="radius_se" placeholder="Radius SE" required>
+            <input type="text" name="texture_se" placeholder="Texture SE" required>
+            <input type="text" name="perimeter_se" placeholder="Perimeter SE" required>
+            <input type="text" name="area_se" placeholder="Area SE" required>
+            <input type="text" name="smoothness_se" placeholder="Smoothness SE" required>
+            <input type="text" name="compactness_se" placeholder="Compactness SE" required>
+            <input type="text" name="concavity_se" placeholder="Concavity SE" required>
+            <input type="text" name="concave_points_se" placeholder="Concave Points SE" required>
+            <input type="text" name="symmetry_se" placeholder="Symmetry SE" required>
+            <input type="text" name="fractal_dimension_se" placeholder="Fractal Dimension SE" required>
+
+            <!-- Worst Values -->
+            
+            <input type="text" name="radius_worst" placeholder="Worst Radius" required>
+            <input type="text" name="texture_worst" placeholder="Worst Texture" required>
+            <input type="text" name="perimeter_worst" placeholder="Worst Perimeter" required>
+            <input type="text" name="area_worst" placeholder="Worst Area" required>
+            <input type="text" name="smoothness_worst" placeholder="Worst Smoothness" required>
+            <input type="text" name="compactness_worst" placeholder="Worst Compactness" required>
+            <input type="text" name="concavity_worst" placeholder="Worst Concavity" required>
+            <input type="text" name="concave_points_worst" placeholder="Worst Concave Points" required>
+            <input type="text" name="symmetry_worst" placeholder="Worst Symmetry" required>
+            <input type="text" name="fractal_dimension_worst" placeholder="Worst Fractal Dimension" required>
+
+            <button type="submit" class="animated-button">Predict</button>
+        </form>
+        <footer>
+            <p>&copy; 2024 Breast Cancer Awareness Month</p>
+            <p>By Heriz Oumaima</p>
+        </footer>
+    </div>
+</body>
+</html>
